@@ -27,7 +27,7 @@ export class Designer extends React.Component<IDesignerPorps> {
 
   renderNodeTitle(node: INode) {
     const { current, setCurrent } = this.model;
-    const { id, name, title } = node;
+    const { id, name, title = "" } = node;
     const active = current && current.id === id ? "active" : "";
     const showTitle = name === title ? name : `${name}: ${title}`;
     return (
