@@ -59,7 +59,8 @@ export class Designer extends React.Component<IDesignerPorps> {
             Type.array,
             Type.string,
             Type.number,
-            Type.boolean
+            Type.boolean,
+            Type.file
           ].includes(node.type)
       },
       {
@@ -87,7 +88,8 @@ export class Designer extends React.Component<IDesignerPorps> {
             Type.array,
             Type.string,
             Type.number,
-            Type.boolean
+            Type.boolean,
+            Type.file
           ].includes(node.type)
       }
     ];

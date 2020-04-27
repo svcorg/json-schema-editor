@@ -3,5 +3,6 @@ export enum Type {
   number = "number",
   boolean = "boolean",
   object = "object",
-  array = "array"
+  array = "array",
+  file = "file"
 }

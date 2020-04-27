@@ -15,6 +15,7 @@ export interface INode {
   expanded?: boolean;
   isItems?: boolean;
   more?: string;
+  $schema?: string;
 }
 
 export class PropNode implements INode {
@@ -26,6 +27,7 @@ export class PropNode implements INode {
   expanded = false;
   description = "";
   more = "";
+  $schema = "https://json-schema.org/draft/2019-09/schema";
 
   public isType(type: Type) {
     return this.type === type;
