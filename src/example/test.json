@@ -3,34 +3,32 @@
   "properties": {
     "user": {
       "type": "object",
-      "title": "用户信息",
+      "title": "title text",
       "properties": {
         "name": {
           "type": "string",
-          "title": "姓名"
+          "title": "name"
         },
         "age": {
           "type": "number",
-          "title": "年龄",
+          "title": "age",
           "default": 18
         },
         "email": {
           "type": "string",
-          "title": "邮箱"
+          "title": "email"
         }
       }
     },
     "tags": {
       "type": "array",
-      "title": "标签",
+      "title": "tags",
       "description": "",
       "items": {
         "type": "string",
         "title": "items",
         "description": "",
-        "enum": [
-          "A - B"
-        ],
+        "enum": ["A - B"],
         "default": "A"
       }
     }

@@ -73,8 +73,8 @@ export class EditorModel {
     const root = new PropNode({
       type: Type.object,
       children: this.data,
-      title: undefined,
-      description: undefined
+      title: "",
+      description: ""
     });
     return toSchema(root);
   }

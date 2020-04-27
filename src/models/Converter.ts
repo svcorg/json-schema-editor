@@ -36,7 +36,7 @@ export function toSchema(node: INode) {
 }
 
 export function fromSchema(descriptor: any, name?: string, isItems = false) {
-  name = name || undefined;
+  name = name || "";
   const { type, title, description, items, properties, ...more } = descriptor;
   const node = new PropNode({ name, type, title, description, isItems });
   if (type === Type.object && properties) {

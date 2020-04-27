@@ -1,8 +1,10 @@
+# Based on the fork of https://github.com/Houfeng/sditor.git
+
 # Sditor = [ S ] chema + E [ Ditor ]
 
 ![sditor](https://img.alicdn.com/tfs/TB109UwQCzqK1RjSZFjXXblCFXa-2018-1016.png)
 
-## Introduction 
+## Introduction
 
 [ S ] chema + E [ Ditor ] = Sditor
 
@@ -21,7 +23,7 @@ import * as React from "react";
 import { Editor, EditorModel } from "sditor";
 
 export class App extends React.Component {
-  
+
   //EditorModel instance
   editorModel: EditorModel;
 
@@ -44,7 +46,7 @@ export class App extends React.Component {
       <button onClick={this.onSave}>Save</button>
     </div>;
   }
-  
+
 }
 ```
 
